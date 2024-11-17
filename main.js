@@ -67,7 +67,7 @@ let books = document.getElementsByClassName("books");
 // ADD BOOK CARDS
 book.forEach(el => {
     const card = document.createElement("div");
-    const name = document.createElement("p");
+    const name = document.createElement("h3");
     const genre = document.createElement("p");
     
     const selectButton = document.createElement("button");

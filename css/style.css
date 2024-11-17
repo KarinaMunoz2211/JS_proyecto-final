@@ -1,12 +1,24 @@
 body{
-    background-color: #2D2D2D}
+    background-color: #2D2D2D;
+    justify-items: center;
+}
 
 h1{
     color: azure;
+    text-align: center;
 }
-.container{
-    display: flex;
 
+h3{
+    text-align: center;
+}
+
+div{
+    padding: 10px;
+}
+
+.container{
+    display: grid;
+    align-items: center;
 }
 
 .book-card{
@@ -16,10 +28,14 @@ h1{
     align-items: center;
     align-content: center;
     background-color: #82230E;
-    margin: 15px;
+    margin: 20px;
     border-radius: 10px;
     border:solid 3px #C1C1C1;
     color: #F0F0EE;
     width: 150px;
     height: 150px;
+}
+
+.button{
+    padding: 5px;
 }
