@@ -87,7 +87,7 @@ book.forEach(el => {
     card.appendChild(name);
     card.appendChild(genre);
 
-    container.appendChild(card);
+    containerCard.appendChild(card);
 
     card.appendChild(selectButton);
 
@@ -95,14 +95,17 @@ book.forEach(el => {
 
 // ADD "SEE FAVORITES BUTTON"
 
-const showFavoritesButton = document.createElement("button");
+let favBooks = document.getElementsById("containerFav");
+document.createElement("button");
 
 showFavoritesButton.addEventListener("click",() => favorites (el));
 
 showFavoritesButton.className = "my-favorites";
 
-
 showFavoritesButton.innerText="Mis Favoritos";
 
 
+favBooks.appendChild(showFavoritesButton);
 
+
+//clase 7 minuto 08:23
