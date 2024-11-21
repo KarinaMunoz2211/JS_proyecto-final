@@ -37,10 +37,10 @@ const book = [
     }
 ]
 
-let favorites = [] 
+let favorites = JSON.parse(localStorage.getItem("newFavorites"))||[] 
 let newFavorites = []
 
- function addToFav(book){
+function addToFav(book){
  const btn = document.getElementById("btn" + book.id)
     if (favorites.some(el => el.id === book.id)){
         newFavorites = favorites.filter(el=> favorites != book.id);
@@ -54,7 +54,6 @@ let newFavorites = []
     }
 
 localStorage.setItem(("newFavorites"),JSON.stringify(newFavorites));
-
 } ;
 
 // TITTLE CHANGE
@@ -91,11 +90,19 @@ book.forEach(el => {
     container.appendChild(card);
 
     card.appendChild(selectButton);
+
 });
 
 // ADD "SEE FAVORITES BUTTON"
 
-const showFavorites = document.createElement("button");
-showFavorites.innerText="Mis Favoritos";
+const showFavoritesButton = document.createElement("button");
 
-showFavorites.appendChild();
+showFavoritesButton.addEventListener("click",() => favorites (el));
+
+showFavoritesButton.className = "my-favorites";
+
+
+showFavoritesButton.innerText="Mis Favoritos";
+
+
+
