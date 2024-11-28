@@ -33,9 +33,14 @@ div{
     border:solid 3px #C1C1C1;
     color: #F0F0EE;
     width: 150px;
-    height: 150px;
+    height: 200px;
 }
 
 .button{
     padding: 5px;
+}
+
+.btn-fav{
+    padding: 10px;
+    width:100px;
 }

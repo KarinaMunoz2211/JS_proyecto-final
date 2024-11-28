@@ -94,18 +94,21 @@ book.forEach(el => {
 });
 
 // ADD "SEE FAVORITES BUTTON"
-
-let favBooks = document.getElementsById("containerFav");
-document.createElement("button");
-
-showFavoritesButton.addEventListener("click",() => favorites (el));
-
-showFavoritesButton.className = "my-favorites";
+const showFavoritesButton = document.createElement("button");
 
 showFavoritesButton.innerText="Mis Favoritos";
+showFavoritesButton.className = "btn-fav";
+
+containerFav.appendChild(showFavoritesButton);
 
 
-favBooks.appendChild(showFavoritesButton);
+/*
+showFavoritesButton.addEventListener("click",() => favorites (el));
 
 
-//clase 7 minuto 08:23
+
+
+
+
+
+*/
